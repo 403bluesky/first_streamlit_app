@@ -60,13 +60,6 @@ try:
 
   
 
-streamlit.header('Fruityvice Fruit Advice!')
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
-streamlit.write('Thanks for adding ', add_my_fruit)
-
-
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
-streamlit.text(fruityvice_response)
 
 
 streamlit.stop();
